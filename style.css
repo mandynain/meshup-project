@@ -13,3 +13,24 @@ line-height: 32px;
     height: 100%;
     float: left;
 }
+
+.content{
+    height: 100%;
+}
+#page1{
+    background-color:red;
+}
+#page2{
+    background-color:FFDD43;
+}
+#page3{
+    background-color:DB4539;
+}
+#map-container{
+    background-color: blue;
+}
+#map_canvas{
+    height: 620px;
+    width:90%;
+    margin: 0 auto;
+}
