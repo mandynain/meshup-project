@@ -1,7 +1,34 @@
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<h1>This is my project.</h1>
-</body>
+  <head>
+    <title>Hello world!!</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+     
+      #map {
+        height: 425px;
+      }
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABK1v3lpNKg1uirMUXBf96iY3u0y18KV0&callback=initMap"
+      async defer></script>
+     <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+              });
+            }
+          </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
 </html>
